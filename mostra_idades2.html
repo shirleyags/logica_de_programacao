@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+<html>
+    <script>
+        /*
+        function pulaLinha(){
+            document.write("<br><hr><br>");
+        }
+        function mostra(frase){
+            document.write("<big>"+frase+"</big>");
+            pulaLinha();
+        }
+        
+        var ano=2012;
+        mostra("Eu nasci em: "+(ano-25));
+        mostra("Adriano nasceu em: "+(ano-26));
+        mostra("Paulo nasceu em: "+(ano-32));
+
+         function pulaLinha() {
+*/
+
+
+function pulaLinha() {
+
+document.write("<br>");
+}
+
+function mostra(frase) {
+document.write(frase);
+pulaLinha();
+}
+
+function a(texto) {
+
+return "(" + texto + ")";
+}
+
+function b(texto) {
+
+return "@" + texto + "@";
+}
+
+function c(nome, sobrenome) {
+
+return b(nome + " " + a(sobrenome));
+
+}
+
+let resultado = c("Flávio", "Almeida");
+
+mostra(resultado);
+        
+    </script>
+</html>

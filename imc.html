@@ -1,0 +1,82 @@
+<meta charset="UTF-8">
+<html>
+    <script>
+       /* 
+        function pulaLinha(){
+            document.write("<br><hr><br>");
+        }
+        function mostra(frase){
+            document.write("<big>"+frase+"</big>");
+            pulaLinha();
+        }
+
+        function calculaImc(altura, peso){
+            var imc=peso/(altura*altura);
+            mostra("O imc calculado é "+Math.round(imc));
+        }
+        function calculaImcAmigo(altura, peso){
+            var imc=peso/(altura*altura);
+            mostra("O imc do meu amigo calculado é "+Math.round(imc));
+        }
+     */
+
+
+/*
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    function calculaImc(altura, peso) {
+
+        return peso / ( altura * altura );
+    }
+
+    var imcFlavio = calculaImc(1.71, 73);
+    var imcAmigo = calculaImc(1.72, 68);
+    var totalImc = imcFlavio+imcAmigo;
+
+    document.write("A soma dos icm´s é "+totalImc);
+  */
+  function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    function calculaImc(altura, peso) {
+
+        return peso / ( altura * altura );
+    }
+
+    let nome = prompt("Digite o seu nome");
+    let alturaInformada = Number(prompt(nome+", informe sua altura"));
+    let pesoInformado = Number(prompt(nome+", informe seu peso"));
+
+    let imc=calculaImc(alturaInformada, pesoInformado);
+
+    mostra (nome+", seu IMC é "+imc);
+    pulaLinha();
+
+    let imcBaixo = 18.5;
+    let imcRecomendado = 18.5;
+    let imcRecomendadoDois = 35;
+
+    if(imc<imcBaixo){
+        mostra("Atenção, seu IMC está abaixo do recomendado pela OMC."+"<br>"+"Procure um especialista.");
+    }
+    else if(imc>=imcRecomendado && imc<=imcRecomendadoDois){
+        mostra("Vocês está com o IMC ideal, recomendado pela OMC.");
+        
+    }
+    else{
+        mostra("Atenção, seu IMC está acima do recomendado pela OMC."+"<br>"+"Procure um especialista.");
+    }
+
+    </script>
+</html>

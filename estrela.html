@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        alert(frase);
+        pulaLinha();
+    }
+
+    for (let linha = 1; linha <= 3; linha++) {
+
+        for (let coluna = 1; coluna <= 10; coluna++) {
+            document.write("*");
+        }
+        pulaLinha();
+    }
+</script>
+
+</html>

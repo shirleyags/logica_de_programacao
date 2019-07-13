@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+<script>
+
+    let loginCadastrado = "alura";
+    let senhaCadastrada = "alura321";
+
+    let maximoTentativas = 3;
+    let tentativaAtual = 1;
+
+    while(tentativaAtual <= maximoTentativas) {
+
+        let loginInformado = prompt("Informe seu login");
+        let senhaInformada = prompt("Informe sua senha");
+
+        if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+            alert("Bem-vindo ao sistema, " + loginInformado);
+
+            tentativaAtual = maximoTentativas; // acertou, então faço o gasto de todas as tentativas para sair do loop. Lá embaixo vai incrementar + 1! 
+
+        } else {
+
+            alert("Login inválido. Tente novamente");
+        }
+
+       // vai para a próxima tentativa
+        tentativaAtual = tentativaAtual +1  
+    }
+
+
+</script>
+
+</html>
